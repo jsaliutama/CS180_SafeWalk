@@ -1,0 +1,53 @@
+import javax.swing.*;
+import java.io.*;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+
+public class SaveWalkServer implements Runnable {
+    private final Socket socket = 0;
+    
+    /**
+     * Construct the server, set up the socket.
+     * 
+     * @throws SocketException if the socket or port cannot be obtained properly.
+     * @throws IOException if the port cannot be reused.
+     */
+    public SafeWalkServer(int port) throws SocketException, IOException {
+        
+        //TODO: finish the method
+    }
+    
+    /**
+     * Construct the server and let the system allocate it a port.
+     * 
+     * @throws SocketException if the socket or port cannot be obtained properly.
+     * @throws IOException if the port cannot be reused.
+     */
+    public SafeWalkServer() throws SocketException, IOException {
+        //TODO: finish the method
+        setReuseAddress(true);
+    }
+    
+    /**
+     * Return the port number on which the server is listening. 
+     */
+    public int getLocalPort() {
+        return this.port;
+    }
+    
+    /**
+     * Start a loop to accept incoming connections.
+     */
+    public void run() {
+        //TODO: finish this method
+    }
+    
+    public String[] interpretInput(String args) {
+        
+    }
+    
+    public static void main(String[] args) {
+        String[] input = args.split(",");
+    }
+}
